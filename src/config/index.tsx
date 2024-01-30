@@ -12,20 +12,20 @@ export const siteConfig = {
       : "[[url-here]]",
   navLinks: [
     {
-      name: "Home",
+      name: "Main",
       href: "/",
     },
     {
-      name: "About",
-      href: "/about",
+      name: "Navitem1",
+      href: "/Navitem1",
     },
     {
-      name: "Projects",
-      href: "/projects",
+      name: "Navitem2",
+      href: "/Navitem2",
     },
     {
-      name: "Contact",
-      href: "/contact",
+      name: "Navitem3",
+      href: "/Navitem3",
     },
   ] as const satisfies NavItem[],
 }

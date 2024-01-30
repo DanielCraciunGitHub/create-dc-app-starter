@@ -7,9 +7,8 @@ export const Footer = () => (
         <div className="flex justify-end">
           <DarkModeButton />
         </div>
-
         <span className="text-sm text-foreground/50 text-end">
-          © 2024 Daniel Craciun. All Rights Reserved
+          © 2024 My Website. All Rights Reserved
         </span>
       </div>
     </div>

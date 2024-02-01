@@ -1,5 +1,3 @@
-import { Toaster } from "@/components/ui/toaster"
-
 import { Footer } from "./Footer"
 import NavBar from "./Navbar"
 

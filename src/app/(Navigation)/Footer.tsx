@@ -1,8 +1,16 @@
+import { siteConfig } from "@/config"
+
 import { DarkModeButton } from "@/components/DarkModeButton"
+import SocialLink from "@/components/SocialLink"
 
 export const Footer = () => (
   <footer className="p-4 z-20">
-    <div className="sm:flex sm:items-center sm:justify-between">
+    <div className="flex sm:justify-between">
+      <div className="space-x-3 flex">
+        {siteConfig.socialLinks.map((socialLink) => (
+          <SocialLink key={socialLink.href} {...socialLink} />
+        ))}
+      </div>
       <div className="flex w-full flex-col space-y-3">
         <div className="flex justify-end">
           <DarkModeButton />

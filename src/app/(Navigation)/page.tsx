@@ -1,7 +1,7 @@
 import { LogInIcon, LogOutIcon } from "lucide-react"
 
 import { auth } from "@/lib/auth"
-import { AuthButton } from "@/components/auth/AuthButton"
+import { AuthButton } from "@/components/AuthButton"
 
 export default async function Home() {
   const session = await auth()
@@ -9,7 +9,7 @@ export default async function Home() {
     <section>
       {session ? (
         <div className="flex flex-col">
-          Welcome {session.user.name}
+          Welcome {session.user.name} from Auth.js
           <AuthButton icon={<LogOutIcon />} />
         </div>
       ) : (

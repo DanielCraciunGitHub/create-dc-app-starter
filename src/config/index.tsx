@@ -1,15 +1,11 @@
-import { NavItem } from "@/types"
-
-export const url =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:3000"
-    : "[[url-here]]"
+import { NavItem, SocialLink } from "@/types"
+import { Facebook, Twitter } from "lucide-react"
 
 export const siteConfig = {
   url:
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : "[[url-here]]",
+      : "https://example.com",
   navLinks: [
     {
       name: "Main",
@@ -27,5 +23,17 @@ export const siteConfig = {
       name: "Navitem3",
       href: "/Navitem3",
     },
-  ] as const satisfies NavItem[],
-}
+  ] satisfies NavItem[],
+  socialLinks: [
+    {
+      name: "Facebook",
+      href: "https://facebook.com",
+      icon: <Facebook className="text-blue-600" />,
+    },
+    {
+      name: "Twitter",
+      href: "https://x.com",
+      icon: <Twitter className="text-blue-600" />,
+    },
+  ] satisfies SocialLink[],
+} as const

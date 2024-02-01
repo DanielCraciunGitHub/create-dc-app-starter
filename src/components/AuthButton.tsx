@@ -4,7 +4,7 @@ import React from "react"
 
 import { authenticate } from "@/app/_actions/authenticate"
 
-import { Button } from "../ui/button"
+import { Button } from "./ui/button"
 
 interface LoginButtonProps {
   icon: React.ReactNode
